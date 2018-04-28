@@ -16,6 +16,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   }
@@ -32,7 +33,9 @@ function viewCart() {
 }
 
 function total() {
+  
 let currentTotal = 0;
+
   for (let i = 0; i < cart.length; i++) {
     currentTotal += (cart[i].itemPrice);
   }
@@ -40,6 +43,7 @@ let currentTotal = 0;
 }
 
 function removeFromCart(itemRemove) {
+  
   for (let i = 0; i < cart.length; i++) {
     if (itemRemove === cart[i].itemName) {
       cart.splice(i, 1);
@@ -50,7 +54,9 @@ function removeFromCart(itemRemove) {
   
 
 function placeOrder(cardNumber) {
+  
   if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you.";
   }
+  
 }
